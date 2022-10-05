@@ -27,7 +27,7 @@ const fetchRepoData = async searchUsername => {
         const { data } = await axios.get(`https://api.github.com/users/${searchUsername}/repos`)
         return data;
     } catch (err) {
-        if (data.status === 404) { throw Error('That\'s not a valid username!') }
+        // if (data.status === 404) { throw Error('That\'s not a valid username!') }
         throw new Error(err.message)
     }
 }

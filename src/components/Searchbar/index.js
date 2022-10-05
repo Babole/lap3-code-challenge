@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { getResult } from '../../actions';
 
 const Searchbar = () => {
     const [username, setUsername] = useState("")
 
+    const dispatch = useDispatch();
+    const search = searchTerm => dispatch(getResult(searchTerm));
+
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(username);
+        search(username);
     }
 
     const updateInput = e => {
         const input = e.target.value
-        console.log(input);
         setUsername(input)
     }
 

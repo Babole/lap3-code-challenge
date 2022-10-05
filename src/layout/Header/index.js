@@ -1,13 +1,16 @@
 import React from 'react'
 
 import './style.css'
-// import '../../images/logo.png'
+import logo from '../../images/logo.png'
 import { Searchbar } from '../../components'
 
 const Header = () => {
   return (
     <header>
-        <img src="../../images/logo.png" alt="HubGit" />
+        <div className='d-flex flex-row'>
+          <img src={logo} style={{ maxWidth: "50px"}} alt="HubGit" />
+          <h1>HubGit</h1>
+        </div>
         <Searchbar />
     </header>
   )

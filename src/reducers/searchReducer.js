@@ -1,6 +1,6 @@
 const initState = {
     username: "",
-    result: [{ name: "", forks_count: "", open_issues_count: "", stargazers_count: "" }],
+    result: null,
     loading: false
 };
 
