@@ -1,0 +1,24 @@
+:root {
+    --nyanza: #d8f3dcff;
+    --turquoise-green: #b7e4c7ff;
+    --turquoise-green-2: #95d5b2ff;
+    --ocean-green: #74c69dff;
+    --mint: #52b788ff;
+    --illuminating-emerald: #40916cff;
+    --bottle-green: #2d6a4fff;
+    --msu-green: #1b4332ff;
+    --dark-jungle-green: #081c15ff;
+
+    --text-primary: var(--turquoise-green);
+    --text-secondary: var(--nyanza);
+    --text-accent: var(--turquoise-green-2);
+    --font-primary: 'Montserrat', sans-serif;
+    --font-accent: 'Quicksand', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
